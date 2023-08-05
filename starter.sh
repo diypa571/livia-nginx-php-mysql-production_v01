@@ -32,3 +32,24 @@ sudo nginx -t
 sudo systemctl restart nginx
 
 echo "Configuration for example.com has been set up successfully!"
+
+
+
+# Check if the script is running with sudo privileges
+if [[ $EUID -ne 0 ]]; then
+    echo "This script must be run with sudo privileges. Please try again with 'sudo'."
+    exit 1
+fi
+
+# The domain and IP address you want to add to /etc/hosts
+domain="example.com"
+ip_address="127.0.0.1"
+
+# Check if the entry already exists in /etc/hosts
+if grep -q "$domain" /etc/hosts; then
+    echo "Entry for $domain already exists in /etc/hosts. No changes made."
+else
+    # Add the entry to /etc/hosts
+    echo "$ip_address $domain" >> /etc/hosts
+    echo "Entry for $domain added to /etc/hosts."
+fi
