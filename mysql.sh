@@ -11,7 +11,10 @@ sudo apt install -y mysql-server
 
 # generate a random password
 #PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9#!' | fold -w 15 | head -n 1 | tr -d '\n')
-PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9#!' | fold -w 15 | grep -E '[a-z]' | grep -E '[A-Z]' | grep -E '[0-9]' | grep -E '[#!]' | head -n 1 | tr -d '\n')
+#PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9#!' | fold -w 15 | grep -E '[a-z]' | grep -E '[A-Z]' | grep -E '[0-9]' | grep -E '[#!]' | head -n 1 | tr -d '\n')
+PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9~!@#$%^&*()_\-+=\{\}\[\]/<>.,;?''":| ' | fold -w 15 | grep -E '.*[a-z].*[a-z].*' | grep -E '.*[A-Z].*[A-Z].*' | grep -E '.*[0-9].*[0-9].*' | grep -E '.*[~!@#$%^&*()_\-+=\{\}\[\]/<>.,;?''":| ].*[~!@#$%^&*()_\-+=\{\}\[\]/<>.,;?''":| ].*' | head -n 1)
+
+
 
 echo "Generated Password: $PASSWORD"
 
