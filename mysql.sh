@@ -11,6 +11,10 @@ sudo apt install -y mysql-server
 
 # generate a random password
 
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+exit
+sudo mysql_secure_installation
  PASSWORD=""
 while [[ ! $(echo $PASSWORD | tr -d -c '[:lower:]' | wc -m) -ge 2 || 
           ! $(echo $PASSWORD | tr -d -c '[:upper:]' | wc -m) -ge 2 || 
@@ -22,6 +26,7 @@ done
 
 
 echo "Generated Password: $PASSWORD"
+ 
 
 # write the password to a file
 echo $PASSWORD > db_password.txt
