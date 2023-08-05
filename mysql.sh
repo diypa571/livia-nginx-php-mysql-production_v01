@@ -10,7 +10,9 @@ fi
 sudo apt install -y mysql-server
 
 # generate a random password
-PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9#!' | fold -w 15 | head -n 1 | tr -d '\n')
+#PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9#!' | fold -w 15 | head -n 1 | tr -d '\n')
+PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9#!' | fold -w 15 | grep -E '[a-z]' | grep -E '[A-Z]' | grep -E '[0-9]' | grep -E '[#!]' | head -n 1 | tr -d '\n')
+
 echo "Generated Password: $PASSWORD"
 
 # write the password to a file
