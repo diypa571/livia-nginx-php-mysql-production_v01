@@ -1,7 +1,27 @@
 #!/bin/bash
 
+# Validate a single domain argument
+function validate_domain {
+    local domain="$1"
+    # Check if the domain has any spaces in between
+    if [[ "$domain" == *" "* ]]; then
+        echo "Error: Domain '$domain' contains spaces."
+        exit 1
+    fi
+    # Check if the domain is at least 5 characters long
+    if (( ${#domain} <= 5 )); then
+        echo "Error: Domain '$domain' should be more than 5 characters long."
+        exit 1
+    fi
+}
+
 # Split comma-separated domains into an array
 IFS=',' read -ra ADDR <<< "$@"
+
+# Loop over all domains provided as arguments
+for domain in "${ADDR[@]}"; do
+    validate_domain "$domain"
+done
 
 # Add Ondřej Surý's PPA
 sudo apt-get install software-properties-common
@@ -56,4 +76,3 @@ done
 
 # test nginx config and restart if successful
 sudo nginx -t && sudo systemctl restart nginx
-
