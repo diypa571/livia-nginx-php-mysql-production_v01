@@ -11,11 +11,20 @@ sudo apt install -y mysql-server
 
 # generate a random password
 
+# Setting a default password first
 sudo mysql
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'p12Do012AloiGkOdKdp##';
+# Exit out of mysql
 exit
-sudo mysql_secure_installation
- PASSWORD=""
+
+
+expect \"Remove test database and access to it? (Press y|Y for Yes, any other key for No) :\"
+send \"Y\r\"
+
+
+
+# Generate a hashed password that will be used for mysql_secure_installation
+PASSWORD=""
 while [[ ! $(echo $PASSWORD | tr -d -c '[:lower:]' | wc -m) -ge 2 || 
           ! $(echo $PASSWORD | tr -d -c '[:upper:]' | wc -m) -ge 2 || 
           ! $(echo $PASSWORD | tr -d -c '[:digit:]' | wc -m) -ge 2 || 
@@ -26,11 +35,14 @@ done
 
 
 echo "Generated Password: $PASSWORD"
- 
-
 # write the password to a file
 echo $PASSWORD > db_password.txt
 echo "Password has been written to db_password.txt"
+
+ # Start secure installation
+sudo mysql_secure_installation
+ 
+  
 
 # secure the mysql install
 SECURE_MYSQL=$(expect -c "
@@ -68,4 +80,3 @@ expect eof
 ")
 
 echo "$SECURE_MYSQL"
-
