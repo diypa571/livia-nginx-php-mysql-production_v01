@@ -44,7 +44,6 @@ for i in "${ADDR[@]}"; do
     # create a test page
     echo "<html><body><h1>$i</h1></body></html>" | sudo tee /var/www/$i/public_html/index.html
     echo "<html><body><h1><?php echo 'Hello World from PHP'; ?> </h1></body></html>" | sudo tee /var/www/$i/public_html/test.php
-
     # create nginx server block files with PHP and XML support
     echo "server {
         listen 80;
@@ -59,10 +58,17 @@ for i in "${ADDR[@]}"; do
             try_files \$uri \$uri/ =404;
         }
 
-        location ~ \.(php|xml)$ {
-            include snippets/fastcgi-php.conf;
-            fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
-        }
+        location ~ \.php$ {
+        	include snippets/fastcgi-php.conf;
+        	fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+    	}
+    
+    	location ~ \.xml$ {
+        	include snippets/fastcgi-php.conf;
+        	fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+    	}
+
+
 
     }" | sudo tee /etc/nginx/sites-available/$i
 
