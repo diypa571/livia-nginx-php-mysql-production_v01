@@ -34,4 +34,7 @@ send \"Y\r\"
 expect eof
 ")
 
+# Run this command for chaning password..
+# mysql-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; flush privileges; exit;
+
 echo "$SECURE_MYSQL"
