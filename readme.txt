@@ -22,7 +22,7 @@ sudo systemctl restart php8.2-fpm
 
 
 - INstalling mysql
-sudo bash mysql.sh
+sudo bash database.sh
 setting a root password: 
 mysql-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; flush privileges; exit;
 
