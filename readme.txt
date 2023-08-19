@@ -18,3 +18,10 @@ security.limit_extensions = .php .php3 .php4 .php5 .php7 .xml
 Last
 sudo systemctl restart php8.2-fpm
 
+
+
+
+- INstalling mysql
+sudo bash mysql.sh
+setting a root password: 
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; 
