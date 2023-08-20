@@ -26,12 +26,14 @@ sudo bash database.sh
 setting a root password: 
 mysql-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; flush privileges; exit;
 
+ 
+sudo apt install -y mysql-server
+sudo systemctl start mysql
+sudo mysql_secure_installation
+
 
 /if not signed into msyql
 run this command
 sudo mysql
 mysql-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; flush privileges; exit;
-
-
-sudo systemctl start mysql
 
