@@ -31,3 +31,7 @@ mysql-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; flush p
 run this command
 sudo mysql
 mysql-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; flush privileges; exit;
+
+
+sudo systemctl start mysql
+
