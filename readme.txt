@@ -24,7 +24,11 @@ sudo systemctl restart php8.2-fpm
 - INstalling mysql
 sudo bash database.sh
 setting a root password: 
-mysql-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; flush privileges; exit;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GtNew#PzFz2#3Erio#d';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GtNew#PzFz2#3Erio#d';
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GtNew#PzFz2#3Erio#d';
 
  
 sudo apt install -y mysql-server
@@ -35,5 +39,5 @@ sudo mysql_secure_installation
 /if not signed into msyql
 run this command
 sudo mysql
-mysql-> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPzz2#3Erio#d'; flush privileges; exit;
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GtNew#PzFz2#3Erio#d';
 
