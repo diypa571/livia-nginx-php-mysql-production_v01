@@ -36,5 +36,5 @@ expect eof
 
 # Run this command for chaning password..
 # ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GtNew#PzFz2#3Erio#d';
-
+ 
 echo "$SECURE_MYSQL"
