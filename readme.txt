@@ -1,4 +1,5 @@
 1- run starter.sh first
+1- run xml.sh
 2- run sudo bash livia.sh test.com
 3- run sudo bash mysql.sh, do the installation manulay...
 
