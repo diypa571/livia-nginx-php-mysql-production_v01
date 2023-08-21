@@ -18,6 +18,9 @@ security.limit_extensions = .php .php3 .php4 .php5 .php7 .xml
 Last
 sudo systemctl restart php8.2-fpm
 
+if access denied for text.xml files..
+sudo nano /etc/php/8.2/fpm/pool.d/www.con
+with ctrl + w find security.limit_extension and enable xml, remove the colon before the line...
 
 
 
