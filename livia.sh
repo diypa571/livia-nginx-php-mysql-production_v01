@@ -7,6 +7,6 @@ sudo chmod +x status.sh
 sudo bash nginx.sh
 sudo bash php.sh "$@"
 #sudo bash  mysql.sh
-sudo bash xml.sh
+#sudo bash xml.sh
 sudo bash status.sh
  
