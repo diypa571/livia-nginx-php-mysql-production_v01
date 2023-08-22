@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the services
-services=("mysql" "nginx" "php8.2-fpm")
+services=("mysql" "nginx" "php8.2-fpm","nftables")
 
 # Loop over the services
 for service in "${services[@]}"
