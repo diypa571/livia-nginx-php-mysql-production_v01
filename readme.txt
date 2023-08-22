@@ -1,8 +1,22 @@
-1- run starter.sh first
-1- run xml.sh
-2- run sudo bash livia.sh test.com
-3- run sudo bash mysql.sh, do the installation manulay...
+There are many ways to turn your distro to a web server and use it for production.
+I did wrote this bash scripts to make the your live easy... all you need is to run the scripts.. and wow you are done. Your linux is machine is ready to be used as a webserver.
+This scripts are written for linux/ubuntu...
 
+
+1- sudo bash starter.sh
+2- sudo bash livia.sh domain.com
+3- sudo bash mysql_global.sh
+4- sudo bash mysql_secure.sh
+5- sudo bash nftables.sh
+
+
+
+For the extra, having dynamic sitemaps, dynamic xml files.
+If required...
+sudo bash xml.sh
+
+
+*****************************************************************************
 For execute php code inside xml files..
 
 Enabling xml for in php
