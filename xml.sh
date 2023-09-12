@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#diypa571
 # Path to the PHP-FPM pool configuration file
 pool_config_file="/etc/php/8.2/fpm/pool.d/www.conf"  # Update this path if needed
 
