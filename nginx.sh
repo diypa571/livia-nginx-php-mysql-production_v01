@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#diypa571
 # Update packages and install nginx
 sudo apt-get update
 sudo apt-get install -y nginx
