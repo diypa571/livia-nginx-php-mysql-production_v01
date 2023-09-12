@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#diypa571
 # Update and install nftables
 sudo apt update
 sudo apt install -y nftables
