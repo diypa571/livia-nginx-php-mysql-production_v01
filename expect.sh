@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# diypa571
 # Check if expect is already installed
 if dpkg --get-selections | grep -q "^expect[[:space:]]*install$" >/dev/null; then
     echo "Expect is already installed, exiting."
