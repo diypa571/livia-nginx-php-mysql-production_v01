@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#diypa571
 # Validate a single domain argument
 function validate_domain {
     local domain="$1"
