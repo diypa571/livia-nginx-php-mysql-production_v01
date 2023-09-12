@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#diypa571
 # Define the services
 services=("mysql" "nginx" "php8.2-fpm","nftables")
 
