@@ -6,7 +6,7 @@ Your linux machine is ready to be used as a webserver.
 
 
 Follow these steps
-1- sudo bash starter.sh
+1- sudo bash setup.sh # This will install nginx
 2- sudo bash livia.sh domain.com # have your dommain.com
 3- sudo bash mysql_global.sh #  install mysql server
 4- sudo bash mysql_secure.sh # 
