@@ -1,5 +1,6 @@
 diypa571
 This scripts are written for linux/ubuntu...
+Easy configure your VM Linux machines to host your applications...
 There are many ways to turn your old pc to a web server and use it for production.
 I did wrote this bash scripts to make just that. All you need is to run the scripts..  and you are done. 
 Your linux machine is ready to be used as a webserver.
