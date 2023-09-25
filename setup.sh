@@ -1,6 +1,5 @@
 #!/bin/bash
 #diypa571
-sudo apt-get install expect
 sudo apt install nginx
 # Step 1: Create directories and set permissions
 sudo mkdir -p /var/www/example.com/public_html
