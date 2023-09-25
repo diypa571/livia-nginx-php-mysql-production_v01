@@ -44,7 +44,7 @@ with ctrl + w find security.limit_extension and enable xml, remove the colon bef
 
 - INstalling mysql
 sudo bash database.sh
-Setting a root password: 
+Setting a root password: (Please remember to write your own password, dont use the default one) 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GalaxyForce#3ECrazyHoursrio#d';
   
  
