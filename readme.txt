@@ -1,9 +1,13 @@
 
-This scripts are written for linux/ubuntu...
-Easy configure your VM Linux machines to host your applications...
-There are many ways to turn your old pc to a web server and use it for production.
-I did wrote this bash scripts to make just that. All you need is to run the scripts..  and you are done. 
-Your linux machine is ready to be used as a webserver.
+These scripts are written for linux/ubuntu...
+Easy way to configure your VM Linux machines to host your applications.
+This script will install php8.2 the latest mysql sever into your machine.
+For security reasons, I have excluded ssh and ftp,sftp packages to be installed.
+While mentioning security, nftables will be installed in your system with the right configuration.  
+
+There are many ways to turn your old Linux machine to a web server and use it for production.
+I did write this bash scripts to make just that. All you need is to run the scripts..  and you are done. 
+Your Linux machine is ready to be used as a web server.
 
 
 Follow these steps
