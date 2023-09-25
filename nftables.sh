@@ -15,7 +15,7 @@ sudo nft add chain inet filter forward { type filter hook forward priority filte
 sudo nft add chain inet filter output { type filter hook output priority filter \; }
 
 # Add rules to accept only SSH (port 22), HTTP (port 80), HTTPS (port 443) traffic
-sudo nft add rule inet filter input tcp dport 22 accept
+# sudo nft add rule inet filter input tcp dport 22 accept
 sudo nft add rule inet filter input tcp dport 80 accept
 sudo nft add rule inet filter input tcp dport 443 accept
 
