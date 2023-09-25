@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo apt-get install expect
 # Generate a strong password that will be used for mysql_secure_installation
 PASSWORD=""
 while [[ ! $(echo $PASSWORD | tr -d -c '[:lower:]' | wc -m) -ge 2 || 
