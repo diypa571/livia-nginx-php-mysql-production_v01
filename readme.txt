@@ -1,5 +1,6 @@
 
-These scripts are written for linux/ubuntu...
+These scripts are written for linux/ubuntu... 
+Can be used for AWS EC2 and Google Cloud Services
 Easy way to configure your VM Linux machines to host your applications.
 This script will install php8.2 the latest mysql sever into your machine.
 For security reasons, I have excluded ssh and ftp,sftp packages to be installed.
