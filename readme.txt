@@ -1,8 +1,9 @@
 Have questions regarding the bash scripts?
 Don't hesitate to ask me anything about it!
-diypa571@gmail.com
+And if you need to configure AWS Linux VM machines for production use?
+Contact me, diypa571@gmail.com
 
-These scripts are written for linux/ubuntu... 
+These scripts are written for Linux/ubuntu... 
 Can be used for AWS EC2 and Google Cloud Services
 Easy way to configure your VM Linux machines to host your applications.
 This script will install php8.2 the latest mysql sever into your machine.
