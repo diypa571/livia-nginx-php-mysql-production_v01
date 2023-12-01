@@ -1,3 +1,6 @@
+Have questions regarding the bash scripts?
+Don't hesitate to ask me anything about it!
+diypa571@gmail.com
 
 These scripts are written for linux/ubuntu... 
 Can be used for AWS EC2 and Google Cloud Services
