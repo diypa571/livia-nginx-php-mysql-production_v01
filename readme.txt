@@ -1,19 +1,16 @@
-This repository provides an alternative to Bitnami's NGINX, Apache and  (Abyss Web Server)  Aprelium's web servers, facilitating the deployment of web applications with the necessary components. The script I've written simplifies the process, allowing for easy installation and configuration of NGINX.
-
+This repository provides an alternative to Bitnami's NGINX, Apache and  (Abyss Web Server)  Aprelium's web servers, facilitating the deployment of web applications with the necessary components. 
+The script I've written simplifies the process, allowing for easy installation and configuration of NGINX.
 Web Server: The script sets up and configures NGINX as the web server.
-
 Database Server: It also handles the installation and configuration of the MySQL database server.
-
 Programming Language: PHP is installed automatically by the scripts.
-
 Additional Components: Based on the needs of your application, it includes nftables firewall configurations for enhanced server security
 *********
-
-
+ 
 Have questions regarding the bash scripts?
 Don't hesitate to ask me anything about it!
 And if you need to configure AWS Linux VM machines for production use?
-Contact me, diypa571@gmail.com
+diypa571@gmail.com
+
 
 These scripts are written for Linux/ubuntu... 
 Can be used for AWS EC2 and Google Cloud Services
