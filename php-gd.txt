@@ -1,2 +1,18 @@
 sudo apt-get install php-gd
+
+
+Secure applications on a Linux server, setting the correct file permissions and ownership.
+
+
+https://medium.com/@diyar.parwana/secure-applications-on-a-linux-server-setting-the-correct-file-permissions-and-ownership-3c00cc217795
+
+
+Username is test
+chown -R test /var/www/domain.com/
+chgrp -R www-data /var/www/domain.com/
+chmod -R 750 /var/www/domain.com/
+chmod g+s /var/www/domain.com/
+
+Have the write permissions for www-data to have write access
+chmod g+w /var/www/domain.com/uploads/userid
 sudo chown -R www-data:www-data /var/www/website.net/public_html/uploads/userid
