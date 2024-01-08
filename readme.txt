@@ -80,6 +80,8 @@ sudo mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GalaxyForce#3WhatEverYouWant#d';
 
 
-1- Articles
+1- nftables
 https://medium.com/@diyar.parwana/nftables-for-uslinux-administrators-a-simple-guide-d13c5f0cf40f
-2- https://medium.com/@diyar.parwana/secure-applications-on-a-linux-server-setting-the-correct-file-permissions-and-ownership-3c00cc217795
+
+2- Secure applications on a Linux server, setting the correct file permissions and ownership.
+https://medium.com/@diyar.parwana/secure-applications-on-a-linux-server-setting-the-correct-file-permissions-and-ownership-3c00cc217795
