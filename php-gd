@@ -1,0 +1,2 @@
+sudo apt-get install php-gd
+sudo chown -R www-data:www-data /var/www/website.net/public_html/uploads/userid
