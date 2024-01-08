@@ -9,7 +9,9 @@ Additional Components: Based on the needs of your application, it includes nftab
 Have questions regarding the bash scripts?
 Don't hesitate to ask me anything about it!
 And if you need to configure AWS Linux VM machines for production use?
+Diyar Parwana
 diypa571@gmail.com
+Linköping, LIU
 
 
 These scripts are written for Linux/ubuntu... 
