@@ -72,9 +72,14 @@ sudo apt install -y mysql-server
 sudo systemctl start mysql
 sudo mysql_secure_installation
 
+ 
 
 /if not signed into msyql
 run this command
 sudo mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GalaxyForce#3WhatEverYouWant#d';
 
+
+1- Articles
+https://medium.com/@diyar.parwana/nftables-for-uslinux-administrators-a-simple-guide-d13c5f0cf40f
+2- https://medium.com/@diyar.parwana/secure-applications-on-a-linux-server-setting-the-correct-file-permissions-and-ownership-3c00cc217795
