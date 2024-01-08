@@ -76,5 +76,5 @@ sudo mysql_secure_installation
 /if not signed into msyql
 run this command
 sudo mysql
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GalaxyForce#3ECrazyHoursrio#d';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'GalaxyForce#3WhatEverYouWant#d';
 
