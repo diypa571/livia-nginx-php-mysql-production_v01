@@ -1,5 +1,7 @@
-This repository provides an alternative to Bitnami's NGINX, Apache and  (Abyss Web Server)  Aprelium's web servers, facilitating the deployment of web applications with the necessary components. 
+This repository provides an alternative to Bitnami's NGINX, Apache and  (Abyss Web Server)  Aprelium's web servers, facilitating the deployment of web applications with the necessary software. 
 The script I've written simplifies the process, allowing for easy installation and configuration of NGINX.
+The script can be used to allow one machine to host multiple websites/applications
+
 Web Server: The script sets up and configures NGINX as the web server.
 Database Server: It also handles the installation and configuration of the MySQL database server.
 Programming Language: PHP is installed automatically by the scripts.
