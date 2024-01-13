@@ -6,8 +6,8 @@ Secure applications on a Linux server, setting the correct file permissions and 
 
 https://medium.com/@diyar.parwana/secure-applications-on-a-linux-server-setting-the-correct-file-permissions-and-ownership-3c00cc217795
 
-
-Username is test
+Correct site file and folder permissions for production *********
+user is test
 chown -R test /var/www/domain.com/
 chgrp -R www-data /var/www/domain.com/
 chmod -R 750 /var/www/domain.com/
