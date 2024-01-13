@@ -1,5 +1,6 @@
 #!/bin/bash
 #diypa571
+#This is a new version of the php.sh file, this is better because it can handle custom error pages
 # Validate a single domain argument
 function validate_domain {
     local domain="$1"
