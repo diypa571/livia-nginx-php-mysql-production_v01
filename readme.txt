@@ -87,3 +87,20 @@ https://medium.com/@diyar.parwana/nftables-for-uslinux-administrators-a-simple-g
 
 2- Secure applications on a Linux server, setting the correct file permissions and ownership.
 https://medium.com/@diyar.parwana/secure-applications-on-a-linux-server-setting-the-correct-file-permissions-and-ownership-3c00cc217795
+
+
+
+     chain input {
+                type filter hook input priority filter; policy accept;
+                tcp dport 80 accept
+                tcp dport 443 accept
+        }
+
+        chain forward {
+                type filter hook forward priority filter; policy drop;
+        }
+
+        chain output {
+                type filter hook output priority filter; policy accept;
+        }
+}
