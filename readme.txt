@@ -104,3 +104,27 @@ https://medium.com/@diyar.parwana/secure-applications-on-a-linux-server-setting-
                 type filter hook output priority filter; policy accept;
         }
 }
+
+
+
+
+
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||
+     chain input {
+                type filter hook input priority filter; policy accept;
+                tcp dport 80 accept
+                tcp dport 443 accept
+        }
+
+        chain forward {
+                type filter hook forward priority filter; policy drop;
+        }
+
+        chain output {
+                type filter hook output priority filter; policy accept;
+        }
+}
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
