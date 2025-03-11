@@ -1,6 +1,10 @@
 
 https://medium.com/@diyar.parwana/secure-applications-on-a-linux-server-setting-the-correct-file-permissions-and-ownership-3c00cc217795
 
+adduser ubuntu
+usermod -aG sudo ubuntu
+rsync --archive --chown=ubuntu:ubuntu ~/.ssh /home/ubuntu
+
 
 ******** GET  the username **************
 chown -R $(whoami) /var/www/domain.com/
